@@ -10,6 +10,18 @@ module.exports = {
     siteMetadata,
     plugins: [
         {
+            resolve: `gatsby-plugin-page-creator`,
+            options: {
+                path: `${__dirname}/src/pages`,
+                ignore: [
+                    {
+                        patterns: [`**/style.js`],
+                        options: { nocase: true },
+                    },
+                ],
+            },
+        },
+        {
             resolve: `gatsby-plugin-manifest`,
             options: {
                 name: `ForYou Comunicação`,
@@ -19,6 +31,12 @@ module.exports = {
                 theme_color: `#E84E0F`,
                 display: `standalone`,
                 icon: `src/images/icon.png`, // 512x512
+            },
+        },
+        {
+            resolve: `gatsby-plugin-styled-components`,
+            options: {
+                displayName: process.env.NODE_ENV !== 'production',
             },
         },
         {

@@ -1,7 +1,7 @@
 {
-  "name": "gatsby-starter-hello-world",
+  "name": "nostalgic-northcutt-9gbf0",
   "private": true,
-  "description": "A simplified bare-bones starter for Gatsby",
+  "description": null,
   "version": "0.1.0",
   "license": "MIT",
   "scripts": {
@@ -14,15 +14,18 @@
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
   },
   "dependencies": {
+    "babel-plugin-styled-components": "1.10.6",
     "gatsby": "^2.19.7",
     "gatsby-plugin-canonical-urls": "2.1.20",
     "gatsby-plugin-google-analytics": "2.1.35",
     "gatsby-plugin-manifest": "2.2.41",
     "gatsby-plugin-nprogress": "2.1.19",
     "gatsby-plugin-offline": "3.0.34",
+    "gatsby-plugin-page-creator": "2.1.40",
     "gatsby-plugin-prefetch-google-fonts": "1.4.3",
     "gatsby-plugin-react-helmet": "3.1.22",
     "gatsby-plugin-sitemap": "2.2.27",
+    "gatsby-plugin-styled-components": "3.1.19",
     "react": "16.12.0",
     "react-dom": "^16.12.0",
     "react-helmet": "5.2.1"
@@ -36,5 +39,11 @@
   },
   "bugs": {
     "url": "https://github.com/gatsbyjs/gatsby/issues"
-  }
+  },
+  "keywords": [
+    "gatsby",
+    "javascript",
+    "react",
+    "styled-components"
+  ]
 }
